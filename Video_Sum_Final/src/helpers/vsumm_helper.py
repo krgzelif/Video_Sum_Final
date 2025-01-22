@@ -94,7 +94,7 @@ def get_keyshot_summ(pred: np.ndarray,
 
     # Get key-shot based summary
    # summary = np.zeros(n_frames, dtype=np.bool)
-    summary = np.zeros(n_frames, dtype=.bool)
+    summary = np.zeros(n_frames, dtype=bool)
     for seg_idx in packed:
         first, last = cps[seg_idx]
         summary[first:last + 1] = True
